@@ -1,10 +1,10 @@
 
-![License](https://img.shields.io/github/license/gov-cy/govcy-unified-design-system-merged)
-[![Accessibility test](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/a11y-test.yml/badge.svg)](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/a11y-test.yml)
-[![Check govcy.uds.min.js](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/js-build-and-distribution-test.yml/badge.svg)](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/js-build-and-distribution-test.yml)
-[![Compiled CSS matches Sass](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/sass-build-and-distribution-test.yml/badge.svg)](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/sass-build-and-distribution-test.yml)
-[![Version Change](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/version-change.yml/badge.svg)](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/version-change.yml)
-[![Visual test](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/visual-test.yml/badge.svg)](https://github.com/gov-cy/govcy-unified-design-system-merged/actions/workflows/visual-test.yml)
+![License](https://img.shields.io/github/license/gov-cy/govcy-design-system-test)
+[![Accessibility test](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/a11y-test.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/a11y-test.yml)
+[![Check govcy.uds.min.js](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/js-build-and-distribution-test.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/js-build-and-distribution-test.yml)
+[![Compiled CSS matches Sass](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/sass-build-and-distribution-test.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/sass-build-and-distribution-test.yml)
+[![Version Change](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/version-change.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/version-change.yml)
+[![Visual test](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/visual-test.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system-test/actions/workflows/visual-test.yml)
 
 # govcy-unified-design-system
 
