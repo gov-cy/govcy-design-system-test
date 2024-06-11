@@ -1,5 +1,5 @@
 /*!
- * gov.cy UDS v3.0.4
+ * gov.cy UDS v3.0.5
  */
 // eslint-disable-next-line no-unused-vars
 let govcyDatePickerLocale = (function () {
