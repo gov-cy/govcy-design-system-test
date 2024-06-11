@@ -8,7 +8,7 @@
   font-size: 1rem !important;
 }
 .app-mainmenu li.active {
-  color: #272525 !important;
+  color: #272525 !important; 
   font-weight: 600;
 }
 @media (min-width: 768px) {
