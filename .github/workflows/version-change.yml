@@ -21,8 +21,10 @@ jobs:
         run: echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1
       - name: Check version not increased
         if: steps.version-check.outputs.changed == 'false'
-        run: echo "Version remained the same. Exiting..."; exit 0
+        run: echo "Version remained the same. Exiting..."; 
+        # These steps will only run if the version has increased
       - name: Create 'vX.X.X' version git tag
+        if: steps.version-check.outputs.changed == 'true'
         uses: actions/github-script@v5
         with:
           script: |
@@ -33,11 +35,13 @@ jobs:
               sha: context.sha
             })
       - uses: dev-drprasad/delete-tag-and-release@v0.2.1
+        if: steps.version-check.outputs.changed == 'true'
         with:
           tag_name: latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create 'latest' git tag
+        if: steps.version-check.outputs.changed == 'true'
         uses: actions/github-script@v5
         with:
           script: |
@@ -48,8 +52,10 @@ jobs:
               sha: context.sha
             })
       - name: Zip /dist folder
+        if: steps.version-check.outputs.changed == 'true'
         run: zip -r dist.zip dist
       - name: Create Release
+        if: steps.version-check.outputs.changed == 'true'
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -60,6 +66,7 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload Release Asset
+        if: steps.version-check.outputs.changed == 'true'
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
